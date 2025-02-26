@@ -33,7 +33,7 @@ A simple multiple-choice question (MCQ) quiz application built with **React** (f
 
 ### **1. Clone the Repository**
 ```sh
-git clone https://github.com/your-username/quizlet-app.git
+git clone https://github.com/aarogyarijal/quizlet-app.git
 cd quizlet-app
 ```
 
