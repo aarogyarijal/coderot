@@ -1,4 +1,4 @@
-# **Quizlet App (MCQ Quiz System) 📚🧠**
+# **Coderot 📚🧠**
 
 A simple multiple-choice question (MCQ) quiz application built with **React** (frontend) and **Node.js with Express & Sequelize** (backend). The app allows users to attempt quiz questions, tracks their success rate, and dynamically updates statistics in a PostgreSQL database.
 
@@ -33,7 +33,7 @@ A simple multiple-choice question (MCQ) quiz application built with **React** (f
 
 ### **1. Clone the Repository**
 ```sh
-git clone https://github.com/aarogyarijal/quizlet-app.git
+git clone https://github.com/aarogyarijal/coderot.git
 cd quizlet-app
 ```
 
