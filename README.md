@@ -51,3 +51,11 @@ cd frontend
 npm install
 npm run dev
 ```
+
+### **3. Plans for the Future**
+- Integrate WebScraper or some LLM API to auto update latest questions.
+- Login System to track individual users
+    - Same questions wont be repeated for the same user
+    - Users can personalize question categories
+    - Users can track completed questions and personal stats
+- Use of AI to identify user strength and weaknesses
