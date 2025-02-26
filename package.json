@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "create-vite": "^6.3.0",
+    "express": "^4.21.2",
+    "lint": "^0.8.19"
+  }
+}

@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "question": "What is the output of `console.log(2 + '2')` in JavaScript?",
+        "options": ["22", "4", "NaN", "Error"],
+        "correct": "22",
+        "feedback": "In JavaScript, the `+` operator concatenates strings, so `2` is converted to a string and combined with `'2'`.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 2,
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": ["var", "let", "const", "All of the above"],
+        "correct": "All of the above",
+        "feedback": "JavaScript allows variable declaration using `var`, `let`, and `const`, depending on the use case.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 3,
+        "question": "What does HTML stand for?",
+        "options": [
+            "Hyper Text Markup Language",
+            "High-Level Text Machine Language",
+            "Hyperlink and Text Markup Language",
+            "Home Tool Markup Language"
+        ],
+        "correct": "Hyper Text Markup Language",
+        "feedback": "HTML stands for Hyper Text Markup Language, which is used to structure content on the web.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 4,
+        "question": "What is the correct syntax for an `if` statement in Python?",
+        "options": [
+            "if x > 5 then:",
+            "if x > 5:",
+            "if (x > 5)",
+            "if x > 5 then"
+        ],
+        "correct": "if x > 5:",
+        "feedback": "In Python, the `if` statement uses a colon (`:`) to define the start of the block.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 5,
+        "question": "Which of the following is NOT a JavaScript data type?",
+        "options": ["String", "Boolean", "Number", "Float"],
+        "correct": "Float",
+        "feedback": "JavaScript does not have a separate `Float` type; numbers are represented as `Number`.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 6,
+        "question": "What is the correct way to write a comment in Python?",
+        "options": [
+            "// This is a comment",
+            "/* This is a comment */",
+            "# This is a comment",
+            "<!-- This is a comment -->"
+        ],
+        "correct": "# This is a comment",
+        "feedback": "In Python, comments are written using the `#` symbol.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 7,
+        "question": "What does CSS stand for?",
+        "options": [
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets",
+            "Colorful Style Sheets"
+        ],
+        "correct": "Cascading Style Sheets",
+        "feedback": "CSS stands for Cascading Style Sheets, which is used to style web pages.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 8,
+        "question": "What is the output of `console.log(typeof null)` in JavaScript?",
+        "options": ["null", "undefined", "object", "string"],
+        "correct": "object",
+        "feedback": "In JavaScript, `typeof null` returns `'object'` due to a historical quirk in the language.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 9,
+        "question": "Which of the following is used to style a webpage?",
+        "options": ["HTML", "CSS", "JavaScript", "Python"],
+        "correct": "CSS",
+        "feedback": "CSS is used to style and design web pages.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 10,
+        "question": "What is the correct way to create a function in JavaScript?",
+        "options": [
+            "function myFunction() {}",
+            "def myFunction() {}",
+            "function = myFunction() {}",
+            "create myFunction() {}"
+        ],
+        "correct": "function myFunction() {}",
+        "feedback": "In JavaScript, functions are declared using the `function` keyword.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 11,
+        "question": "What is the output of `console.log(0 == '0')` in JavaScript?",
+        "options": ["true", "false", "Error", "NaN"],
+        "correct": "true",
+        "feedback": "The `==` operator performs type coercion, so `0` and `'0'` are considered equal.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 12,
+        "question": "Which of the following is NOT a valid Python variable name?",
+        "options": ["my_var", "_myVar", "2myVar", "myVar2"],
+        "correct": "2myVar",
+        "feedback": "Variable names in Python cannot start with a number.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 13,
+        "question": "What is the correct way to add an element to the end of an array in JavaScript?",
+        "options": [
+            "array.add(element)",
+            "array.push(element)",
+            "array.append(element)",
+            "array.insert(element)"
+        ],
+        "correct": "array.push(element)",
+        "feedback": "The `push()` method adds an element to the end of an array in JavaScript.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 14,
+        "question": "What is the output of `console.log(1 === '1')` in JavaScript?",
+        "options": ["true", "false", "Error", "NaN"],
+        "correct": "false",
+        "feedback": "The `===` operator checks both value and type, and `1` (number) is not the same as `'1'` (string).",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 15,
+        "question": "Which of the following is used to define a block of code in Python?",
+        "options": ["Curly braces {}", "Indentation", "Square brackets []", "Parentheses ()"],
+        "correct": "Indentation",
+        "feedback": "Python uses indentation to define blocks of code.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 16,
+        "question": "What is the correct way to check if a variable `x` is equal to 5 in JavaScript?",
+        "options": [
+            "if x = 5",
+            "if x == 5",
+            "if x === 5",
+            "Both b and c"
+        ],
+        "correct": "Both b and c",
+        "feedback": "Both `==` (loose equality) and `===` (strict equality) can be used, depending on whether type coercion is desired.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 17,
+        "question": "What is the output of `console.log(2 ** 3)` in JavaScript?",
+        "options": ["6", "8", "9", "Error"],
+        "correct": "8",
+        "feedback": "The `**` operator is used for exponentiation, so `2 ** 3` equals `8`.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 18,
+        "question": "Which of the following is used to loop through an array in JavaScript?",
+        "options": ["for loop", "while loop", "forEach", "All of the above"],
+        "correct": "All of the above",
+        "feedback": "JavaScript provides multiple ways to loop through arrays, including `for`, `while`, and `forEach`.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 19,
+        "question": "What is the correct way to create a class in Python?",
+        "options": [
+            "class MyClass:",
+            "create MyClass:",
+            "def MyClass:",
+            "new MyClass:"
+        ],
+        "correct": "class MyClass:",
+        "feedback": "In Python, classes are defined using the `class` keyword.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    },
+    {
+        "id": 20,
+        "question": "What is the output of `console.log('5' + 2)` in JavaScript?",
+        "options": ["52", "7", "NaN", "Error"],
+        "correct": "52",
+        "feedback": "The `+` operator concatenates strings, so `'5'` and `2` are combined as strings.",
+        "totalAttempts": 0,
+        "correctAttempts": 0
+    }
+]
