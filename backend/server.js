@@ -30,7 +30,7 @@ syncDatabase();
 app.get("/questions", async (req, res) => {
     try {
         const questions = await Question.findAll({
-            attributes: ['id', 'question', 'options']  // Return only necessary fields
+            attributes: ['id', 'question', 'options', 'totalAttempts', 'correctAttempts']  // Return only necessary fields
         });
         res.json(questions);
     } catch (err) {
@@ -58,9 +58,16 @@ app.post("/check", express.json(), async (req, res) => {
         await question.save();
 
         if (answer === question.correct) {
-            res.send({ correct: true });
+            res.send({ correct: true,
+                correctAttempts: question.correctAttempts,
+                totalAttempts: question.totalAttempts
+             });
         } else {
-            res.send({ correct: false, feedback: question.feedback });
+            res.send({ correct: false, 
+                feedback: question.feedback, 
+                correctAttempts: question.correctAttempts,
+                totalAttempts: question.totalAttempts
+            });
         }
     } catch (err) {
         console.error("Error checking answer:", err);
