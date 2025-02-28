@@ -36,7 +36,11 @@ const Question = sequelize.define('Question', {
   correctAttempts: {
     type: DataTypes.INTEGER,
     defaultValue: 0
-  }
+  },
+  tags: {
+    type: DataTypes.JSONB,  // Store options as a JSON object
+    defaultValue: []
+  },
 });
 
 // Sync the database (create tables if they don't exist)

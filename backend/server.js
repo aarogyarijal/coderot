@@ -1,25 +1,26 @@
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const { Question, syncDatabase } = require('./db');  // Import sequelize models
+const { exportQuestionsToJson, generateQuestions } = require('./questionGenerator');
 
 const app = express();
 const port = 5000;
 
-app.use((req, res, next) => {
-    console.log(`Request method: ${req.method}`);
-    console.log(`Request URL: ${req.url}`);
-    console.log('Request Headers:', req.headers);
-    if (req.method === 'POST' || req.method === 'PUT') {
-        req.on('data', chunk => {
-            console.log('Request Body:', chunk.toString());
-        });
-    }
-    next(); // Move to the next middleware or route handler
-});
+// app.use((req, res, next) => {
+//     console.log(`Request method: ${req.method}`);
+//     console.log(`Request URL: ${req.url}`);
+//     console.log('Request Headers:', req.headers);
+//     if (req.method === 'POST' || req.method === 'PUT') {
+//         req.on('data', chunk => {
+//             console.log('Request Body:', chunk.toString());
+//         });
+//     }
+//     next(); // Move to the next middleware or route handler
+// });
 
-app.use(cors({
-    origin: 'http://localhost:5174',  // Allow only this origin
+app.use(cors({  // Allow only this origin
     methods: ['GET', 'POST'],  // Allow only GET and POST methods
     allowedHeaders: ['Content-Type', 'Authorization'],  // Allow specific headers
 }));
@@ -30,7 +31,7 @@ syncDatabase();
 app.get("/questions", async (req, res) => {
     try {
         const questions = await Question.findAll({
-            attributes: ['id', 'question', 'options', 'totalAttempts', 'correctAttempts']  // Return only necessary fields
+            attributes: ['id', 'question', 'options', 'totalAttempts', 'correctAttempts', 'tags']  // Return only necessary fields
         });
         res.json(questions);
     } catch (err) {
@@ -75,6 +76,14 @@ app.post("/check", express.json(), async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-});
+// Initialize and start server
+async function initializeServer() {
+    await syncDatabase();
+    await generateQuestions();
+    
+    app.listen(port, () => {
+        console.log(`Main server running at http://localhost:${port}`);
+    });
+}
+
+initializeServer();
