@@ -1,222 +1,299 @@
 [
-    {
-        "id": 1,
-        "question": "What is the output of `console.log(2 + '2')` in JavaScript?",
-        "options": ["22", "4", "NaN", "Error"],
-        "correct": "22",
-        "feedback": "In JavaScript, the `+` operator concatenates strings, so `2` is converted to a string and combined with `'2'`.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 2,
-        "question": "Which keyword is used to declare a variable in JavaScript?",
-        "options": ["var", "let", "const", "All of the above"],
-        "correct": "All of the above",
-        "feedback": "JavaScript allows variable declaration using `var`, `let`, and `const`, depending on the use case.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 3,
-        "question": "What does HTML stand for?",
-        "options": [
-            "Hyper Text Markup Language",
-            "High-Level Text Machine Language",
-            "Hyperlink and Text Markup Language",
-            "Home Tool Markup Language"
-        ],
-        "correct": "Hyper Text Markup Language",
-        "feedback": "HTML stands for Hyper Text Markup Language, which is used to structure content on the web.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 4,
-        "question": "What is the correct syntax for an `if` statement in Python?",
-        "options": [
-            "if x > 5 then:",
-            "if x > 5:",
-            "if (x > 5)",
-            "if x > 5 then"
-        ],
-        "correct": "if x > 5:",
-        "feedback": "In Python, the `if` statement uses a colon (`:`) to define the start of the block.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 5,
-        "question": "Which of the following is NOT a JavaScript data type?",
-        "options": ["String", "Boolean", "Number", "Float"],
-        "correct": "Float",
-        "feedback": "JavaScript does not have a separate `Float` type; numbers are represented as `Number`.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 6,
-        "question": "What is the correct way to write a comment in Python?",
-        "options": [
-            "// This is a comment",
-            "/* This is a comment */",
-            "# This is a comment",
-            "<!-- This is a comment -->"
-        ],
-        "correct": "# This is a comment",
-        "feedback": "In Python, comments are written using the `#` symbol.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 7,
-        "question": "What does CSS stand for?",
-        "options": [
-            "Computer Style Sheets",
-            "Cascading Style Sheets",
-            "Creative Style Sheets",
-            "Colorful Style Sheets"
-        ],
-        "correct": "Cascading Style Sheets",
-        "feedback": "CSS stands for Cascading Style Sheets, which is used to style web pages.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 8,
-        "question": "What is the output of `console.log(typeof null)` in JavaScript?",
-        "options": ["null", "undefined", "object", "string"],
-        "correct": "object",
-        "feedback": "In JavaScript, `typeof null` returns `'object'` due to a historical quirk in the language.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 9,
-        "question": "Which of the following is used to style a webpage?",
-        "options": ["HTML", "CSS", "JavaScript", "Python"],
-        "correct": "CSS",
-        "feedback": "CSS is used to style and design web pages.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 10,
-        "question": "What is the correct way to create a function in JavaScript?",
-        "options": [
-            "function myFunction() {}",
-            "def myFunction() {}",
-            "function = myFunction() {}",
-            "create myFunction() {}"
-        ],
-        "correct": "function myFunction() {}",
-        "feedback": "In JavaScript, functions are declared using the `function` keyword.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 11,
-        "question": "What is the output of `console.log(0 == '0')` in JavaScript?",
-        "options": ["true", "false", "Error", "NaN"],
-        "correct": "true",
-        "feedback": "The `==` operator performs type coercion, so `0` and `'0'` are considered equal.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 12,
-        "question": "Which of the following is NOT a valid Python variable name?",
-        "options": ["my_var", "_myVar", "2myVar", "myVar2"],
-        "correct": "2myVar",
-        "feedback": "Variable names in Python cannot start with a number.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 13,
-        "question": "What is the correct way to add an element to the end of an array in JavaScript?",
-        "options": [
-            "array.add(element)",
-            "array.push(element)",
-            "array.append(element)",
-            "array.insert(element)"
-        ],
-        "correct": "array.push(element)",
-        "feedback": "The `push()` method adds an element to the end of an array in JavaScript.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 14,
-        "question": "What is the output of `console.log(1 === '1')` in JavaScript?",
-        "options": ["true", "false", "Error", "NaN"],
-        "correct": "false",
-        "feedback": "The `===` operator checks both value and type, and `1` (number) is not the same as `'1'` (string).",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 15,
-        "question": "Which of the following is used to define a block of code in Python?",
-        "options": ["Curly braces {}", "Indentation", "Square brackets []", "Parentheses ()"],
-        "correct": "Indentation",
-        "feedback": "Python uses indentation to define blocks of code.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 16,
-        "question": "What is the correct way to check if a variable `x` is equal to 5 in JavaScript?",
-        "options": [
-            "if x = 5",
-            "if x == 5",
-            "if x === 5",
-            "Both b and c"
-        ],
-        "correct": "Both b and c",
-        "feedback": "Both `==` (loose equality) and `===` (strict equality) can be used, depending on whether type coercion is desired.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 17,
-        "question": "What is the output of `console.log(2 ** 3)` in JavaScript?",
-        "options": ["6", "8", "9", "Error"],
-        "correct": "8",
-        "feedback": "The `**` operator is used for exponentiation, so `2 ** 3` equals `8`.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 18,
-        "question": "Which of the following is used to loop through an array in JavaScript?",
-        "options": ["for loop", "while loop", "forEach", "All of the above"],
-        "correct": "All of the above",
-        "feedback": "JavaScript provides multiple ways to loop through arrays, including `for`, `while`, and `forEach`.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 19,
-        "question": "What is the correct way to create a class in Python?",
-        "options": [
-            "class MyClass:",
-            "create MyClass:",
-            "def MyClass:",
-            "new MyClass:"
-        ],
-        "correct": "class MyClass:",
-        "feedback": "In Python, classes are defined using the `class` keyword.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
-    },
-    {
-        "id": 20,
-        "question": "What is the output of `console.log('5' + 2)` in JavaScript?",
-        "options": ["52", "7", "NaN", "Error"],
-        "correct": "52",
-        "feedback": "The `+` operator concatenates strings, so `'5'` and `2` are combined as strings.",
-        "totalAttempts": 0,
-        "correctAttempts": 0
+  {
+    "question": "What is the output of the following Python code? print(2 ** 3 ** 2)",
+    "options": [
+      "64",
+      "512",
+      "128",
+      "256"
+    ],
+    "correct": "512",
+    "feedback": "In Python, the exponentiation operator ** has right-to-left associativity. Therefore, 3 ** 2 is calculated first, resulting in 9, and then 2 ** 9 is calculated, resulting in 512.",
+    "tags": {
+      "difficulty": "Medium",
+      "skillArea": "Programming",
+      "language": "Python",
+      "concepts": [
+        "Exponentiation",
+        "Operator Precedence"
+      ]
     }
+  },
+  {
+    "question": "Which of the following is NOT a valid data type in JavaScript?",
+    "options": [
+      "boolean",
+      "number",
+      "integer",
+      "string"
+    ],
+    "correct": "integer",
+    "feedback": "JavaScript does not have a distinct 'integer' type; it treats all numbers as floating-point values.",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Web Development",
+      "language": "JavaScript",
+      "concepts": [
+        "Data Types"
+      ]
+    }
+  },
+  {
+    "question": "In SQL, which clause is used to filter groups?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "correct": "HAVING",
+    "feedback": "The HAVING clause is used in SQL to filter groups based on a condition, whereas the WHERE clause filters rows before grouping.",
+    "tags": {
+      "difficulty": "Medium",
+      "skillArea": "Database Management",
+      "language": "SQL",
+      "concepts": [
+        "Grouping",
+        "Filtering"
+      ]
+    }
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Colorful Style Sheets",
+      "Creative Style Sheets"
+    ],
+    "correct": "Cascading Style Sheets",
+    "feedback": "CSS stands for Cascading Style Sheets, which is used for describing the presentation of a document written in HTML or XML.",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Web Development",
+      "language": "CSS",
+      "concepts": [
+        "Styling"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a correct way to declare a pointer in C++?",
+    "options": [
+      "int ptr*;",
+      "int *ptr;",
+      "*int ptr;",
+      "int* ptr;"
+    ],
+    "correct": "int *ptr;",
+    "feedback": "In C++, the correct way to declare a pointer is by placing the asterisk (*) next to the variable name, indicating that 'ptr' is a pointer to an integer.",
+    "tags": {
+      "difficulty": "Hard",
+      "skillArea": "Systems Programming",
+      "language": "C++",
+      "concepts": [
+        "Pointers",
+        "Variable Declaration"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following Python code? print(2 ** 3 ** 2)",
+    "options": [
+      "64",
+      "512",
+      "256",
+      "1024"
+    ],
+    "correct": "512",
+    "feedback": "In Python, the exponentiation operator ** has right-sided binding. This means the expression is evaluated as 2 ** (3 ** 2), which equals 2 ** 9 or 512.",
+    "tags": {
+      "difficulty": "Medium",
+      "skillArea": "Programming",
+      "language": "Python",
+      "concepts": [
+        "Exponentiation",
+        "Operator precedence"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is NOT a valid variable name in Java?",
+    "options": [
+      "_variable",
+      "variable1",
+      "1variable",
+      "$variable"
+    ],
+    "correct": "1variable",
+    "feedback": "In Java, variable names cannot start with a digit. They must start with a letter, underscore (_), or dollar sign ($).",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Programming",
+      "language": "Java",
+      "concepts": [
+        "Variable naming conventions"
+      ]
+    }
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Sheets",
+      "Colorful Style Sheets",
+      "Creative Style Sheets"
+    ],
+    "correct": "Cascading Style Sheets",
+    "feedback": "CSS stands for Cascading Style Sheets, which is used for describing the presentation of a document written in HTML or XML.",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Web Development",
+      "language": "CSS",
+      "concepts": [
+        "Web design",
+        "Styling"
+      ]
+    }
+  },
+  {
+    "question": "In SQL, which command is used to update existing data in a database?",
+    "options": [
+      "INSERT",
+      "UPDATE",
+      "MODIFY",
+      "CHANGE"
+    ],
+    "correct": "UPDATE",
+    "feedback": "The UPDATE command in SQL is used to modify the existing records in a table.",
+    "tags": {
+      "difficulty": "Medium",
+      "skillArea": "Database Management",
+      "language": "SQL",
+      "concepts": [
+        "Data manipulation",
+        "SQL commands"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a correct way to declare a function in JavaScript?",
+    "options": [
+      "function = myFunction()",
+      "function myFunction()",
+      "function:myFunction()",
+      "function => myFunction()"
+    ],
+    "correct": "function myFunction()",
+    "feedback": "In JavaScript, the correct syntax to declare a function is 'function myFunction() {}'.",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Programming",
+      "language": "JavaScript",
+      "concepts": [
+        "Function declaration",
+        "Syntax"
+      ]
+    }
+  },
+  {
+    "question": "What is the output of the following Python code? print(2 ** 3 ** 2)",
+    "options": [
+      "64",
+      "512",
+      "256",
+      "1024"
+    ],
+    "correct": "512",
+    "feedback": "The expression is evaluated from right to left due to the right-associative nature of the exponentiation operator in Python, so 3 ** 2 is 9, and then 2 ** 9 is 512.",
+    "tags": {
+      "difficulty": "Medium",
+      "skillArea": "Python Programming",
+      "language": "Python",
+      "concepts": [
+        "exponentiation",
+        "operator precedence"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is NOT a valid variable name in Java?",
+    "options": [
+      "int",
+      "_myVar",
+      "$myVar",
+      "myVar1"
+    ],
+    "correct": "int",
+    "feedback": "'int' is a reserved keyword in Java and cannot be used as a variable name.",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Java Programming",
+      "language": "Java",
+      "concepts": [
+        "variable naming",
+        "reserved keywords"
+      ]
+    }
+  },
+  {
+    "question": "In HTML, which tag is used to define an internal style sheet?",
+    "options": [
+      "<css>",
+      "<style>",
+      "<script>",
+      "<link>"
+    ],
+    "correct": "<style>",
+    "feedback": "The <style> tag is used to define an internal style sheet within an HTML document.",
+    "tags": {
+      "difficulty": "Easy",
+      "skillArea": "Web Development",
+      "language": "HTML",
+      "concepts": [
+        "HTML tags",
+        "CSS"
+      ]
+    }
+  },
+  {
+    "question": "What does the 'git clone' command do?",
+    "options": [
+      "Creates a new branch",
+      "Downloads a repository from GitHub to your local machine",
+      "Deletes a repository",
+      "Merges two branches"
+    ],
+    "correct": "Downloads a repository from GitHub to your local machine",
+    "feedback": "The 'git clone' command is used to create a copy of a remote repository on your local machine.",
+    "tags": {
+      "difficulty": "Medium",
+      "skillArea": "Version Control",
+      "language": "Git",
+      "concepts": [
+        "git commands",
+        "repository management"
+      ]
+    }
+  },
+  {
+    "question": "Which SQL clause is used to filter groups?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "FILTER",
+      "GROUP BY"
+    ],
+    "correct": "HAVING",
+    "feedback": "The HAVING clause is used in SQL to filter groups based on a specified condition, unlike the WHERE clause which filters rows.",
+    "tags": {
+      "difficulty": "Hard",
+      "skillArea": "Database Management",
+      "language": "SQL",
+      "concepts": [
+        "SQL clauses",
+        "data filtering"
+      ]
+    }
+  }
 ]

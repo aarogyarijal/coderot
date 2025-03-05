@@ -40,11 +40,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .question{
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
   
   .quiz-container ul {
     list-style: none;
     min-width: 60%;
     max-width: 80%;
+    padding:0;
   }
   
   .quiz-container li {
@@ -77,3 +83,60 @@
   #selectedOption{
     background-color: darkgray;
   }
+
+  .tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the tags */
+  }
+  
+  /* Individual tag styling */
+  .tag {
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 5px 10px; /* Padding for the tag */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 1rem; /* Font size for readability */
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  
+/* Filter section styling */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Dropdown menu styling */
+.filter-dropdown {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for dropdowns */
+.filter-dropdown:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Focus effect for dropdowns */
+.filter-dropdown:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+  outline: none;
+}
+
+/* Option styling within the dropdown */
+.filter-dropdown option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
