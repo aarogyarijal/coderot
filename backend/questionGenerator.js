@@ -16,42 +16,35 @@ const deepseek = axios.create({
 });
 
 const generationPrompt = `
-Message UID: ${Date.now()} - Nonce: ${Math.random().toString(36).substring(2,10)}
-Unique ID: ${Date.now()}-${Math.floor(Math.random()*1000)}
-Generate 10 unique coding multiple-choice questions in valid JSON format.
-Message UID: ${Date.now()} - Nonce: ${Math.random().toString(36).substring(2,10)}
-Unique ID: ${Date.now()}-${Math.floor(Math.random()*1000)}
-Each of the 10 questions should follow this json format:
+Generate 5 unique multiple-choice questions suitable for a coding or computer science quiz. Format each question as a JSON object following this schema:
+
 {
-  "question": "Question text",
+  "question": "The main question text.",
   "options": [
-    "Option A content",
-    "Option B content",
-    "Option C content",
-    "Option D content"
-    ],
-  "correct": "Option A content",
-  "feedback": "Explanation why A is correct",
+    "Option A's description",
+    "Option B's description",
+    "Option C's description",
+    "Option D's description"
+  ],
+  "correct": "The exact content of the correct option (e.g., 'Option A\\'s description')",
+  "feedback": "A concise explanation for why the chosen 'correct' option is the right answer and why other options are incorrect or less suitable.",
   "tags": {
-      "difficulty": "{Easy, Medium, Hard}",
-      "skillArea": "{Some vague skill area}",
-      "language": "{coding language}",
-      "concepts": [
-        "concept 1",
-        "concept 2",...
-      ]
-    }
+    "difficulty": "One of: Easy, Medium, Hard",
+    "skillArea": "A relevant domain or skill (e.g., 'Object-Oriented Programming', 'Database Management', 'Front-end Development', 'Operating Systems', 'Cybersecurity')",
+    "language": "The primary programming language or technology relevant to the question (e.g., 'Python', 'SQL', 'JavaScript', 'C++', 'General Programming Concepts')",
+    "concepts": [
+      "Specific concept 1 (e.g., 'Polymorphism')",
+      "Specific concept 2 (e.g., 'SQL Joins')",
+      "Specific concept 3 (e.g., 'Asynchronous JavaScript')"
+    ]
+  }
 }
-Message UID: ${Date.now()} - Nonce: ${Math.random().toString(36).substring(2,10)}
-Unique ID: ${Date.now()}-${Math.floor(Math.random()*1000)}
-Requirements:
-- Return only valid JSON (no markdown) (DOUBLE CHECK json FORMAT)(This is critical)
-- Include 5 different questions
-- Cover various academic subjects
-- Ensure options have logical distinctions
-- Difficulty levels should vary
-Message UID: ${Date.now()} - Nonce: ${Math.random().toString(36).substring(2,10)}
-Unique ID: ${Date.now()}-${Math.floor(Math.random()*1000)}
+
+Constraints:
+- The output must be **valid JSON and nothing else**.
+- Each question's options must be clearly distinct and plausible.
+- Include a variety of difficulty levels (Easy, Medium, Hard) among the 5 questions.
+- Questions should cover a range of academic subjects within computer science or programming.
 `;
 
 // Validation function
