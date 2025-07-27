@@ -2,7 +2,7 @@ name: Keep AdonisJS App Awake
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes + random delay
+    - cron: '*/1 * * * *'  # Every 5 minutes + random delay
   workflow_dispatch:      # Allows manual trigger from GitHub UI
 
 jobs:
