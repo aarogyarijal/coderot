@@ -1,0 +1,27 @@
+name: Keep AdonisJS App Awake
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Every 5 minutes
+  workflow_dispatch:      # Allows manual trigger from GitHub UI
+
+jobs:
+  ping-endpoint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Ping API Endpoint
+        run: |
+          echo "Pinging endpoint at $(date)"
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://adonisjs-backend-1.onrender.com/api/v1/tutor/142)
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ]; then
+            echo "✅ Ping successful"
+          else
+            echo "❌ Ping failed with code: $response"
+            exit 1
+          fi
+        
+      - name: Log timestamp
+        run: echo "Completed ping at $(date)"
