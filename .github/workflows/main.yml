@@ -2,7 +2,7 @@ name: Keep AdonisJS App Awake
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/5 * * * *'  # Every 5 minutes + random delay
   workflow_dispatch:      # Allows manual trigger from GitHub UI
 
 jobs:
@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Random delay (0-2 minutes)
+        run: |
+          # Generate random delay between 0-120 seconds (0-2 minutes)
+          delay=$((RANDOM % 121))
+          echo "Waiting ${delay} seconds before ping..."
+          sleep $delay
+          
       - name: Ping API Endpoint
         run: |
           echo "Pinging endpoint at $(date)"
